@@ -1,0 +1,60 @@
+req: POST /api/v1/users/login body: {"query":"\n    query IntrospectionQuery {\n      __schema {\n        \n        queryType { name }\n        mutationType { name }\n        subscriptionType { name }\n        types {\n          ...FullType\n        }\n        directives {\n          name\n          description\n          \n          locations\n          args {\n            ...InputValue\n          }\n        }\n      }\n    }\n\n    fragment FullType on __Type {\n      kind\n      name\n      description\n      \n      fields(includeDeprecated: true) {\n        name\n        description\n        args {\n          ...InputValue\n        }\n        type {\n          ...TypeRef\n        }\n        isDeprecated\n        deprecationReason\n      }\n      inputFields {\n        ...InputValue\n      }\n      interfaces {\n        ...TypeRef\n      }\n      enumValues(includeDeprecated: true) {\n        name\n        description\n        isDeprecated\n        deprecationReason\n      }\n      possibleTypes {\n        ...TypeRef\n      }\n    }\n\n    fragment InputValue on __InputValue {\n      name\n      description\n      type { ...TypeRef }\n      defaultValue\n      \n      \n    }\n\n    fragment TypeRef on __Type {\n      kind\n      name\n      ofType {\n        kind\n        name\n        ofType {\n          kind\n          name\n          ofType {\n            kind\n            name\n            ofType {\n              kind\n              name\n              ofType {\n                kind\n                name\n                ofType {\n                  kind\n                  name\n                  ofType {\n                    kind\n                    name\n                  }\n                }\n              }\n            }\n          }\n        }\n      }\n    }\n  "} 
+res: status: 400, {"error":"Invalid data","message":["La propiedad email no esta incluida","La propiedad email no debe estar vacia","La propiedad email debe ser string","La propiedad email no tiene el formato de correo","La propiedad password no esta incluida","La propiedad password no debe estar vacia","La propiedad email debe ser string"]} 
+
+====================ERROR 3/10/2023, 7:34:07 p. m.=========================
+====================ERROR 3/10/2023, 7:34:06 p. m.=========================
+req: POST /api/v1/users/login body: {"query":"\n    query IntrospectionQuery {\n      __schema {\n        \n        queryType { name }\n        mutationType { name }\n        subscriptionType { name }\n        types {\n          ...FullType\n        }\n        directives {\n          name\n          description\n          \n          locations\n          args {\n            ...InputValue\n          }\n        }\n      }\n    }\n\n    fragment FullType on __Type {\n      kind\n      name\n      description\n      \n      fields(includeDeprecated: true) {\n        name\n        description\n        args {\n          ...InputValue\n        }\n        type {\n          ...TypeRef\n        }\n        isDeprecated\n        deprecationReason\n      }\n      inputFields {\n        ...InputValue\n      }\n      interfaces {\n        ...TypeRef\n      }\n      enumValues(includeDeprecated: true) {\n        name\n        description\n        isDeprecated\n        deprecationReason\n      }\n      possibleTypes {\n        ...TypeRef\n      }\n    }\n\n    fragment InputValue on __InputValue {\n      name\n      description\n      type { ...TypeRef }\n      defaultValue\n      \n      \n    }\n\n    fragment TypeRef on __Type {\n      kind\n      name\n      ofType {\n        kind\n        name\n        ofType {\n          kind\n          name\n          ofType {\n            kind\n            name\n            ofType {\n              kind\n              name\n              ofType {\n                kind\n                name\n                ofType {\n                  kind\n                  name\n                  ofType {\n                    kind\n                    name\n                  }\n                }\n              }\n            }\n          }\n        }\n      }\n    }\n  "} 
+res: status: 400, {"error":"Invalid data","message":["La propiedad email no esta incluida","La propiedad email no debe estar vacia","La propiedad email debe ser string","La propiedad email no tiene el formato de correo","La propiedad password no esta incluida","La propiedad password no debe estar vacia","La propiedad email debe ser string"]} 
+
+====================ERROR 3/10/2023, 7:34:53 p. m.=========================
+req: POST /api/v1/users/login body: {} 
+res: status: 400, {"error":"Invalid data","message":["La propiedad email no esta incluida","La propiedad email no debe estar vacia","La propiedad email debe ser string","La propiedad email no tiene el formato de correo","La propiedad password no esta incluida","La propiedad password no debe estar vacia","La propiedad email debe ser string"]} 
+
+====================ERROR 3/10/2023, 7:35:32 p. m.=========================
+req: POST /api/v1/users/login body: {} 
+res: status: 400, {"error":"Invalid data","message":["La propiedad email no esta incluida","La propiedad email no debe estar vacia","La propiedad email debe ser string","La propiedad email no tiene el formato de correo","La propiedad password no esta incluida","La propiedad password no debe estar vacia","La propiedad email debe ser string"]} 
+
+====================ERROR 3/10/2023, 7:37:33 p. m.=========================
+req: POST /api/v1/users/login body: {} 
+res: status: 400, {"error":"Invalid data","message":["La propiedad email no esta incluida","La propiedad email no debe estar vacia","La propiedad email debe ser string","La propiedad email no tiene el formato de correo","La propiedad password no esta incluida","La propiedad password no debe estar vacia","La propiedad email debe ser string"]} 
+
+====================ERROR 3/10/2023, 7:41:22 p. m.=========================
+req: POST /api/v1/users/login body: {} 
+res: status: 400, {"expose":true,"statusCode":400,"body":"{\r\n    \"email\": \"marquezglevis@gmail.com\"\r\n    \"password\": juan.j0s3\r\n}\r\n\r\n","type":"entity.parse.failed"} 
+
+====================ERROR 3/10/2023, 7:42:24 p. m.=========================
+req: POST /api/v1/users/login body: {} 
+res: status: 400, {"expose":true,"statusCode":400,"body":"{\r\n    \"email\": \"marquezglevis@gmail.com\"\r\n    \"password\": asdf.$1234\r\n}\r\n\r\n","type":"entity.parse.failed"} 
+
+====================ERROR 3/10/2023, 7:46:26 p. m.=========================
+req: POST /api/v1/users/login body: {} 
+res: status: 400, {"expose":true,"statusCode":400,"body":"{\r\n    \"email\": \"marquezglevis@gmail.com\"\r\n    \"password\": asdf.$1234\r\n}\r\n\r\n","type":"entity.parse.failed"} 
+
+====================ERROR 3/10/2023, 7:54:31 p. m.=========================
+req: POST /api/v1/users/login body: {"password":"asdff.$1234","email":"marquezglevis@gmail.com"} 
+res: status: 400, {"error":"User does not exist mid","message":"You need register before login"} 
+
+====================ERROR 3/10/2023, 7:54:36 p. m.=========================
+req: POST /api/v1/users/login body: {"password":"asdff.$1234","email":"marquezglevis@gmail.com"} 
+res: status: 400, {"error":"User does not exist mid","message":"You need register before login"} 
+
+====================ERROR 3/10/2023, 7:54:42 p. m.=========================
+req: POST /api/v1/users/login body: {"password":"asdff.$1234","email":"marquezglevis@gmail.com"} 
+res: status: 400, {"error":"User does not exist mid","message":"You need register before login"} 
+
+====================ERROR 3/10/2023, 7:54:43 p. m.=========================
+req: POST /api/v1/users/login body: {"password":"asdff.$1234","email":"marquezglevis@gmail.com"} 
+res: status: 400, {"error":"User does not exist mid","message":"You need register before login"} 
+
+====================ERROR 3/10/2023, 7:54:43 p. m.=========================
+req: POST /api/v1/users/login body: {"password":"asdff.$1234","email":"marquezglevis@gmail.com"} 
+res: status: 400, {"error":"User does not exist mid","message":"You need register before login"} 
+
+====================ERROR 3/10/2023, 7:54:43 p. m.=========================
+req: POST /api/v1/users/login body: {"password":"asdff.$1234","email":"marquezglevis@gmail.com"} 
+res: status: 400, {"error":"User does not exist mid","message":"You need register before login"} 
+
+====================ERROR 3/10/2023, 7:54:44 p. m.=========================
+req: POST /api/v1/users/login body: {"password":"asdff.$1234","email":"marquezglevis@gmail.com"} 
+res: status: 400, {"error":"User does not exist mid","message":"You need register before login"} 
+

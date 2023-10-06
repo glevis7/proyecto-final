@@ -1,0 +1,144 @@
+====================ERROR 5/10/2023, 4:15:18 p. m.=========================
+req: GET /api/v1/users body: {"firstname":"Ariel","lastname":"Maldonado","email":"ariel@gmail.com","password":"123.Flut3"} 
+res: status: 401, {"message":"No authorization header"} 
+
+====================ERROR 5/10/2023, 4:16:47 p. m.=========================
+req: POST /api/v1/users/login body: {} 
+res: status: 400, {"expose":true,"statusCode":400,"body":"{\r\n    \"email\": \"marquezglevis@gmail.com\"\r\n    \"password\": \"asdf.$1234\"\r\n}\r\n\r\n","type":"entity.parse.failed"} 
+
+====================ERROR 5/10/2023, 4:16:54 p. m.=========================
+req: POST /api/v1/users/login body: {"email":"marquezglevis@gmail.com","password":"asdf.$1234"} 
+res: status: 400, {"error":"User does not exist mid","message":"You need register before login"} 
+
+====================ERROR 5/10/2023, 4:17:07 p. m.=========================
+req: GET /api/v1/users body: {"firstname":"Ariel","lastname":"Maldonado","email":"ariel@gmail.com","password":"123.Flut3"} 
+res: status: 401, {"message":"No authorization header"} 
+
+====================ERROR 5/10/2023, 4:18:10 p. m.=========================
+req: POST /api/v1/users body: {"firstname":"Ariel","lastname":"Maldonado","email":"ariel@gmail.com","password":"123.Flut3"} 
+res: status: 400, {"error":"Invalid data","message":["El password debe ser minimo 8 caracteres, una mayuscula, una minuscula"]} 
+
+====================ERROR 5/10/2023, 4:19:53 p. m.=========================
+req: POST /api/v1/users body: {"firstname":"Ariel","lastname":"Maldonado","email":"ariel@gmail.com","password":"123.Flut3"} 
+res: status: 400, {"error":"Invalid data","message":["El password debe ser minimo 8 caracteres, una mayuscula, una minuscula"]} 
+
+====================ERROR 5/10/2023, 4:19:55 p. m.=========================
+req: POST /api/v1/users body: {"firstname":"Ariel","lastname":"Maldonado","email":"ariel@gmail.com","password":"123.Flut3"} 
+res: status: 400, {"error":"Invalid data","message":["El password debe ser minimo 8 caracteres, una mayuscula, una minuscula"]} 
+
+====================ERROR 5/10/2023, 4:36:18 p. m.=========================
+req: POST /api/v1/users body: {"firstname":"Ariel","lastname":"Maldonado","email":"ariel@gmail.com","password":"123.Flut3"} 
+res: status: 400, {"error":"Invalid data","message":["El password debe ser minimo 8 caracteres, una mayuscula, una minuscula"]} 
+
+====================ERROR 5/10/2023, 4:37:36 p. m.=========================
+req: POST /api/v1/users body: {"firstname":"Ariel","lastname":"Maldonado","email":"ariel@gmail.com","password":"123.Flut3"} 
+res: status: 400, {"error":"Invalid data","message":["El password debe ser minimo 8 caracteres, una mayuscula, una minuscula"]} 
+
+====================ERROR 5/10/2023, 4:38:17 p. m.=========================
+req: POST /api/v1/users body: {"firstname":"Ariel","lastname":"Maldonado","email":"ariel@gmail.com","password":"hola"} 
+res: status: 400, {"error":"Invalid data","message":["El password debe ser minimo 8 caracteres, una mayuscula, una minuscula"]} 
+
+====================ERROR 5/10/2023, 4:38:32 p. m.=========================
+req: POST /api/v1/users body: {"firstname":"Ariel","lastname":"Maldonado","email":"ariel@gmail.com","password":"asdf.$1234"} 
+res: status: 400, {"error":"Invalid data","message":["El password debe ser minimo 8 caracteres, una mayuscula, una minuscula"]} 
+
+====================ERROR 5/10/2023, 4:38:48 p. m.=========================
+req: POST /api/v1/users body: {"firstname":"Ariel","lastname":"Maldonado","email":"ariel@gmail.com","password":"123.Flut3"} 
+res: status: 400, {"error":"Invalid data","message":["El password debe ser minimo 8 caracteres, una mayuscula, una minuscula"]} 
+
+====================ERROR 5/10/2023, 4:38:56 p. m.=========================
+req: POST /api/v1/users body: {"firstname":"Ariel","lastname":"Maldonado","email":"ariel@gmail.com","password":"1233Flut3"} 
+res: status: 400, {"error":"Invalid data","message":["El password debe ser minimo 8 caracteres, una mayuscula, una minuscula"]} 
+
+====================ERROR 5/10/2023, 4:41:05 p. m.=========================
+req: POST /api/v1/users/login body: {"email":"ariel@gmail.com","password":"123.Flut3"} 
+res: status: 400, {"error":"Incorrect password","message":"The password does not match with the user"} 
+
+====================ERROR 5/10/2023, 4:42:29 p. m.=========================
+req: POST /api/v1/users body: {"firstname":"Ariel","lastname":"Maldonado","email":"ariel@gmail.com","password":"123.Flut3"} 
+res: status: 400, {"error":"Invalid data","message":["El password debe ser minimo 8 caracteres, una mayuscula, una minuscula"]} 
+
+====================ERROR 5/10/2023, 4:46:15 p. m.=========================
+req: POST /api/v1/users body: {"firstname":"Ariel","lastname":"Maldonado","email":"ariel@gmail.com","password":"123@Flut3"} 
+res: status: 400, {"error":"Invalid data","message":["El password debe ser minimo 8 caracteres, una mayuscula, una minuscula"]} 
+
+====================ERROR 5/10/2023, 4:48:28 p. m.=========================
+req: POST /api/v1/users body: {"firstname":"Ariel","lastname":"Maldonado","email":"ariel@gmail.com","password":"123@t3"} 
+res: status: 400, {"error":"Invalid data","message":["El password debe ser minimo 8 caracteres, una mayuscula, una minuscula"]} 
+
+====================ERROR 5/10/2023, 4:48:53 p. m.=========================
+req: POST /api/v1/users/login body: {"email":"ariel@gmail.com","password":"123@Flut3"} 
+res: status: 401, {"error":"Email verification needed","message":"Look at your email messages for a verification email"} 
+
+====================ERROR 5/10/2023, 5:29:41 p. m.=========================
+req: POST /api/v1/users/validate body: {} 
+res: status: 400, {"message":"Token is required"} 
+
+====================ERROR 5/10/2023, 5:30:06 p. m.=========================
+req: POST /api/v1/users/login body: {"email":"glevis7@gmail.com","password":"123@Flut3"} 
+res: status: 401, {"error":"Email verification needed","message":"Look at your email messages for a verification email"} 
+
+====================ERROR 5/10/2023, 5:33:06 p. m.=========================
+req: POST /api/v1/users body: {"firstname":"Glevis","lastname":"Marquez","email":"glevis7@gmail.com","password":"123@Flut3"} 
+res: status: undefined, {} 
+
+====================ERROR 5/10/2023, 5:33:43 p. m.=========================
+req: POST /api/v1/users body: {"firstname":"Glevis","lastname":"Marquez","email":"glevis7@gmail.com","password":"123@Flut3"} 
+res: status: undefined, {"name":"SequelizeUniqueConstraintError","errors":[],"parent":{"length":211,"name":"error","severity":"ERROR","code":"23505","detail":"Ya existe la llave (email)=(glevis7@gmail.com).","schema":"public","table":"Users","constraint":"Users_email_key","file":"nbtinsert.c","line":"671","routine":"_bt_check_unique","sql":"INSERT INTO \"Users\" (\"id\",\"firstname\",\"lastname\",\"email\",\"password\",\"createdAt\",\"updatedAt\") VALUES (DEFAULT,$1,$2,$3,$4,$5,$6) RETURNING \"id\",\"firstname\",\"lastname\",\"email\",\"avatar\",\"password\",\"description\",\"validEmail\",\"createdAt\",\"updatedAt\";","parameters":["Glevis","Marquez","glevis7@gmail.com","$2b$10$y78MiniO7Im/HXwtYlqcY.UvzqOH/ru2CEY4fR1cqZoqVgajVNCRW","2023-10-05 22:33:42.208 +00:00","2023-10-05 22:33:42.208 +00:00"]},"original":{"length":211,"name":"error","severity":"ERROR","code":"23505","detail":"Ya existe la llave (email)=(glevis7@gmail.com).","schema":"public","table":"Users","constraint":"Users_email_key","file":"nbtinsert.c","line":"671","routine":"_bt_check_unique","sql":"INSERT INTO \"Users\" (\"id\",\"firstname\",\"lastname\",\"email\",\"password\",\"createdAt\",\"updatedAt\") VALUES (DEFAULT,$1,$2,$3,$4,$5,$6) RETURNING \"id\",\"firstname\",\"lastname\",\"email\",\"avatar\",\"password\",\"description\",\"validEmail\",\"createdAt\",\"updatedAt\";","parameters":["Glevis","Marquez","glevis7@gmail.com","$2b$10$y78MiniO7Im/HXwtYlqcY.UvzqOH/ru2CEY4fR1cqZoqVgajVNCRW","2023-10-05 22:33:42.208 +00:00","2023-10-05 22:33:42.208 +00:00"]},"fields":{},"sql":"INSERT INTO \"Users\" (\"id\",\"firstname\",\"lastname\",\"email\",\"password\",\"createdAt\",\"updatedAt\") VALUES (DEFAULT,$1,$2,$3,$4,$5,$6) RETURNING \"id\",\"firstname\",\"lastname\",\"email\",\"avatar\",\"password\",\"description\",\"validEmail\",\"createdAt\",\"updatedAt\";"} 
+
+====================ERROR 5/10/2023, 5:34:31 p. m.=========================
+req: POST /api/v1/users/validate body: {"token":"eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJpZCI6NiwiZmlyc3RuYW1lIjoiR2xldmlzIiwibGFzdG5hbWUiOiJNYXJxdWV6IiwiZW1haWwiOiJnbGV2aXM3QGdtYWlsLmNvbSIsInVwZGF0ZWRBdCI6IjIwMjMtMTAtMDVUMjI6MzQ6MDQuNDAwWiIsImNyZWF0ZWRBdCI6IjIwMjMtMTAtMDVUMjI6MzQ6MDQuNDAwWiIsImF2YXRhciI6Imh0dHBzOi8vY2RuLnBpeGFiYXkuY29tL3Bob3RvLzIwMTUvMTAvMDUvMjIvMzcvYmxhbmstcHJvZmlsZS1waWN0dXJlLTk3MzQ2MDEyODAucG5nIiwiZGVzY3JpcHRpb24iOm51bGwsInZhbGlkRW1haWwiOmZhbHNlLCJpYXQiOjE2OTY1NDUyNDUsImV4cCI6MTY5NjU0ODg0NX0.jCFDTWAC1WaHLtfqjkOcaDtmx5em5TaqH2_L4_l66OwvMAvFs5Yenc6SOmPMjAywc5LGXtd7tZPJYu_XXEZ1mA"} 
+res: status: undefined, {"name":"JsonWebTokenError","message":"invalid signature"} 
+
+====================ERROR 5/10/2023, 5:36:08 p. m.=========================
+req: POST /api/v1/users body: {"firstname":"Glevis","lastname":"Marquez","email":"glevis7@gmail.com","password":"123@Flut3"} 
+res: status: undefined, {} 
+
+====================ERROR 5/10/2023, 5:40:56 p. m.=========================
+req: GET /api/v1/users body: {} 
+res: status: 401, {"message":"No authorization header"} 
+
+====================ERROR 5/10/2023, 5:41:23 p. m.=========================
+req: POST /api/v1/conversations body: {"userId":2,"participantsId":8} 
+res: status: 401, {"message":"No authorization header"} 
+
+====================ERROR 5/10/2023, 5:42:53 p. m.=========================
+req: POST /api/v1/conversations/group body: {"userId":8,"participantsIds":[2,9],"title":"Parangaricutirimicuaro"} 
+res: status: 401, {"message":"No authorization header"} 
+
+====================ERROR 5/10/2023, 5:43:43 p. m.=========================
+req: GET /api/v1/conversations/1 body: {} 
+res: status: 401, {"message":"No authorization header"} 
+
+====================ERROR 5/10/2023, 5:47:21 p. m.=========================
+req: POST /api/v1/messages/1 body: {"senderId":2,"content":"Testing messages"} 
+res: status: 401, {"message":"No authorization header"} 
+
+====================ERROR 5/10/2023, 5:47:33 p. m.=========================
+req: POST /api/v1/messages/1 body: {"senderId":2,"content":"Testing messages"} 
+res: status: undefined, {"name":"SequelizeForeignKeyConstraintError","parent":{"length":306,"name":"error","severity":"ERROR","code":"23503","detail":"La llave (conversationId)=(1) no está presente en la tabla «Conversations».","schema":"public","table":"Messages","constraint":"Messages_conversationId_fkey","file":"ri_triggers.c","line":"2607","routine":"ri_ReportViolation","sql":"INSERT INTO \"Messages\" (\"id\",\"content\",\"senderId\",\"conversationId\",\"createdAt\") VALUES (DEFAULT,$1,$2,$3,$4) RETURNING \"id\",\"content\",\"senderId\",\"conversationId\",\"createdAt\";","parameters":["Testing messages",2,"1","2023-10-05 22:47:32.046 +00:00"]},"original":{"length":306,"name":"error","severity":"ERROR","code":"23503","detail":"La llave (conversationId)=(1) no está presente en la tabla «Conversations».","schema":"public","table":"Messages","constraint":"Messages_conversationId_fkey","file":"ri_triggers.c","line":"2607","routine":"ri_ReportViolation","sql":"INSERT INTO \"Messages\" (\"id\",\"content\",\"senderId\",\"conversationId\",\"createdAt\") VALUES (DEFAULT,$1,$2,$3,$4) RETURNING \"id\",\"content\",\"senderId\",\"conversationId\",\"createdAt\";","parameters":["Testing messages",2,"1","2023-10-05 22:47:32.046 +00:00"]},"sql":"INSERT INTO \"Messages\" (\"id\",\"content\",\"senderId\",\"conversationId\",\"createdAt\") VALUES (DEFAULT,$1,$2,$3,$4) RETURNING \"id\",\"content\",\"senderId\",\"conversationId\",\"createdAt\";","parameters":["Testing messages",2,"1","2023-10-05 22:47:32.046 +00:00"],"fields":null} 
+
+====================ERROR 5/10/2023, 5:48:49 p. m.=========================
+req: GET /api/v1/messages/2 body: {} 
+res: status: 401, {"message":"No authorization header"} 
+
+====================ERROR 5/10/2023, 5:48:56 p. m.=========================
+req: GET /api/v1/messages/2 body: {} 
+res: status: undefined, {} 
+
+====================ERROR 5/10/2023, 5:54:31 p. m.=========================
+req: GET /api/v1/conversations body: {} 
+res: status: 401, {"message":"No authorization header"} 
+
+====================ERROR 5/10/2023, 5:58:13 p. m.=========================
+req: DELETE /api/v1/conversations/3 body: {} 
+res: status: undefined, {"name":"SequelizeForeignKeyConstraintError","parent":{"length":324,"name":"error","severity":"ERROR","code":"23503","detail":"La llave (id)=(3) todavía es referida desde la tabla «Participants».","schema":"public","table":"Participants","constraint":"Participants_ConversationId_fkey","file":"ri_triggers.c","line":"2621","routine":"ri_ReportViolation","sql":"DELETE FROM \"Conversations\" WHERE \"id\" = '3'"},"original":{"length":324,"name":"error","severity":"ERROR","code":"23503","detail":"La llave (id)=(3) todavía es referida desde la tabla «Participants».","schema":"public","table":"Participants","constraint":"Participants_ConversationId_fkey","file":"ri_triggers.c","line":"2621","routine":"ri_ReportViolation","sql":"DELETE FROM \"Conversations\" WHERE \"id\" = '3'"},"sql":"DELETE FROM \"Conversations\" WHERE \"id\" = '3'","parameters":{},"fields":null} 
+
+====================ERROR 5/10/2023, 6:00:40 p. m.=========================
+req: DELETE /api/v1/conversations/3 body: {} 
+res: status: undefined, {"name":"SequelizeForeignKeyConstraintError","parent":{"length":324,"name":"error","severity":"ERROR","code":"23503","detail":"La llave (id)=(3) todavía es referida desde la tabla «Participants».","schema":"public","table":"Participants","constraint":"Participants_ConversationId_fkey","file":"ri_triggers.c","line":"2621","routine":"ri_ReportViolation","sql":"DELETE FROM \"Conversations\" WHERE \"id\" = '3'"},"original":{"length":324,"name":"error","severity":"ERROR","code":"23503","detail":"La llave (id)=(3) todavía es referida desde la tabla «Participants».","schema":"public","table":"Participants","constraint":"Participants_ConversationId_fkey","file":"ri_triggers.c","line":"2621","routine":"ri_ReportViolation","sql":"DELETE FROM \"Conversations\" WHERE \"id\" = '3'"},"sql":"DELETE FROM \"Conversations\" WHERE \"id\" = '3'","parameters":{},"fields":null} 
+
+====================ERROR 5/10/2023, 6:09:04 p. m.=========================
+req: DELETE /api/v1/conversations/3 body: {} 
+res: status: undefined, {"name":"SequelizeForeignKeyConstraintError","parent":{"length":324,"name":"error","severity":"ERROR","code":"23503","detail":"La llave (id)=(3) todavía es referida desde la tabla «Participants».","schema":"public","table":"Participants","constraint":"Participants_ConversationId_fkey","file":"ri_triggers.c","line":"2621","routine":"ri_ReportViolation","sql":"DELETE FROM \"Conversations\" WHERE \"id\" = '3'"},"original":{"length":324,"name":"error","severity":"ERROR","code":"23503","detail":"La llave (id)=(3) todavía es referida desde la tabla «Participants».","schema":"public","table":"Participants","constraint":"Participants_ConversationId_fkey","file":"ri_triggers.c","line":"2621","routine":"ri_ReportViolation","sql":"DELETE FROM \"Conversations\" WHERE \"id\" = '3'"},"sql":"DELETE FROM \"Conversations\" WHERE \"id\" = '3'","parameters":{},"fields":null} 
+
