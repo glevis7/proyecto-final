@@ -5,6 +5,7 @@ const cors = require("cors");
 const apiv1Routes = require("./routes/apiv1.routes");
 const errorRoutes = require("./routes/error.routes");
 require("dotenv").config();
+const { exec } = require('child_process');
 
 const PORT = process.env.PORT ?? 8001;
 
@@ -21,6 +22,17 @@ app.get("/", (req, res) => {
 apiv1Routes(app);
 errorRoutes(app);
 
-app.listen(PORT, () => {
+app.listen(PORT, async () => {
   console.log(`Servidor escuchando en el puerto ${PORT}`);
+  await new Promise((resolve, reject) => {
+    const migrate = exec(
+      'sequelize db:migrate',
+      { env: process.env },
+      err => (err ? reject(err) : resolve())
+    );
+
+    // Forward stdout+stderr to this process
+    migrate.stdout.pipe(process.stdout);
+    migrate.stderr.pipe(process.stderr);
+  });
 });
